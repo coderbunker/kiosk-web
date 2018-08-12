@@ -14,10 +14,10 @@
 <script>
     var video = document.getElementById("video");
 
-    setTimeout(function () {
+    (function () {
         video.play();
-        goFullscreen();
-    }, 50);
+        goFullscreen("video");
+    })();
 
     function goFullscreen(id) {
         var element = document.getElementById(id);
