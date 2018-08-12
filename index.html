@@ -1,93 +1,25 @@
-<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-      integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous"
-
 <!DOCTYPE html>
 <html lang="en" manifest="offlinecache.manifest">
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>AP CS Survey</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Coderbunker Video</title>
 </head>
-</head>
-
-<style type="text/css">
-    ::-webkit-media-controls {
-        display: none !important;
-    }
-
-    #demo-top-bar {
-        text-align: left;
-        background: #222;
-        position: relative;
-        zoom: 1;
-        width: 100% !important;
-        z-index: 6000;
-        padding: 20px 0 20px;
-    }
-
-    #demo-bar-inside {
-        width: 960px;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #demo-bar-badge {
-        display: inline-block;
-        width: 302px;
-        padding: 0 !important;
-        margin: 0 !important;
-        background-color: transparent !important;
-        font-size: 45px;
-        font-family: Gulim;
-        color: white;
-    }
-
-    #video {
-        margin: 0 0 10 0;
-        position: relative;
-    }
-
-    body {
-        background: #000;
-        overflow-x: hidden;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        display: block;
-    }
-
-
-</style>
-
-
-<body>
+<body style="background:#000;">
 <video loop id='video' style="position:fixed;left:0;top:0;width:100vw;height: 100vh;" preload="auto">
     <source src="start.mp4" type="video/mp4">
 </video>
-
-
 <script>
-
     var video = document.getElementById("video");
 
     setTimeout(function () {
         video.play();
-        console.log("Test");
         goFullscreen();
     }, 50);
 
     function goFullscreen(id) {
-
         var element = document.getElementById(id);
         if (element.mozRequestFullScreen) {
             element.mozRequestFullScreen();
@@ -96,11 +28,6 @@
         } else if (element.msRequestFullScreen) {
             element.msRequestFullScreen();
         }
-
-
-        element.play();
-
-
     }
 
 
