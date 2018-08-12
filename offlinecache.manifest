@@ -1,0 +1,10 @@
+CACHEMANIFEST
+# version: 01
+# List files that should be cached under CACHE
+CACHE:
+index.html
+start.mp4
+# List the resources that shouldn't be cached and requires network
+# Note you can use * to specify all the resources that are not listed under CACHE
+NETWORK:
+*
