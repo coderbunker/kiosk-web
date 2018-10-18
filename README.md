@@ -7,3 +7,4 @@ Webapp source code
 
 [kiosk-admin](https://github.com/coderbunker/kiosk-admin)
 
+[Project board](https://github.com/orgs/coderbunker/projects/1)
